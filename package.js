@@ -1,7 +1,7 @@
 Package.describe({
   summary: "Ravelry OAuth flow",
   name: "amschrader:ravelry",
-  git: "git@github.com:amschrader/ravelry.git",
+  git: "git@github.com:amschrader/meteor-ravelry.git",
   version: "0.1.0"
 });
 
