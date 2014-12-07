@@ -12,13 +12,13 @@ Package.onTest(function(api) {
 });
 
 Package.on_use(function(api) {
-  api.use('http', ['client', 'server']);
-  api.use('templating', 'client');
-  api.use('oauth1', ['client', 'server']);
-  api.use('oauth', ['client', 'server']);
-  api.use('random', 'client');
-  api.use('underscore', 'server');
-  api.use('service-configuration', ['client', 'server']);
+  api.use('http@1.0.8', ['client', 'server']);
+  api.use('templating@1.0.9', 'client');
+  api.use('oauth1@1.1.2', ['client', 'server']);
+  api.use('oauth@1.1.2', ['client', 'server']);
+  api.use('random@1.0.1', 'client');
+  api.use('underscore@1.0.1', 'server');
+  api.use('service-configuration@1.0.2', ['client', 'server']);
 
   api.export && api.export('Ravelry');
 
