@@ -1,8 +1,8 @@
 Package.describe({
   summary: "Ravelry OAuth flow",
   name: "amschrader:ravelry",
-  git: "git@github.com:amschrader/meteor-ravelry.git",
-  version: "0.1.0"
+  git: "https://github.com/amschrader/meteor-ravelry.git",
+  version: "0.1.2"
 });
 
 Package.onTest(function(api) {
@@ -11,7 +11,7 @@ Package.onTest(function(api) {
   api.addFiles('ravelry-tests.js');
 });
 
-Package.on_use(function(api) {
+Package.onUse(function(api) {
   api.use('http@1.0.8', ['client', 'server']);
   api.use('templating@1.0.9', 'client');
   api.use('oauth1@1.1.2', ['client', 'server']);
@@ -27,6 +27,6 @@ Package.on_use(function(api) {
     'ravelry-configure.js'
   ],'client');
 
-  api.add_files('ravelry-server.js', 'server');
-  api.add_files('ravelry-client.js', 'client');
+  api.addFiles('ravelry-server.js', 'server');
+  api.addFiles('ravelry-client.js', 'client');
 });
